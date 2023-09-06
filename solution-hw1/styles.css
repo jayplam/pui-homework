@@ -1,0 +1,50 @@
+/* Main stuff */
+body {
+  font-family: sans-serif;
+}
+.contain_div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Header stuff */
+h1 {
+  font-weight: normal;
+}
+
+/* Format/style stuff */
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+}
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+.list_div a {
+  display: block;
+  width: 400px;
+  padding: 20px;
+}
+
+
+/*base image size classes*/
+.img_border {
+  border: solid 5px;
+  border-color: black;
+}
+
+
+/* Hover stuff */
+
+figcaption , p , h1 {
+  text-align: center;
+}
+#cart_button {
+  margin: 0 auto;
+}

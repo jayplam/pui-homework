@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="author" content="Jadon Lam">
     <title>Bun Bun Bake Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
-      <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      <a href="./index.html">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo" width="400">
+      </a>
       <hr>
       <nav>
         <ul>
@@ -18,13 +20,41 @@
       </nav>
     </header>
     <main>
-      <h1>Shopping cart</h1>
-      <div>
-        <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
-        <p>Original cinnamon roll</p>
-        <p>Glazing: Keep original</p>
-        <p>Pack size: 1</p>
+      <div class="contain_div">
+        <div>
+          <h1>Shopping cart</h1>
 
+          <div>
+            <figure>
+              <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" width="200" class="img_border">
+              <figcaption>Remove</figcaption>
+            </figure>
+            <p>
+              Original Cinnamon Roll<br>
+              Glazing: Keep original<br>
+              Pack size: 1
+            </p>
+            <p class="cart_price">$ 2.49</p>
+          </div>
+
+          <div>
+            <figure>
+              <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double chocolate cinnamon roll" width="200" class="img_border">
+              <figcaption>Remove</figcaption>
+            </figure>
+            <p>
+              Double Chocolate Cinnamon Roll<br>
+              Glazing: Sugar milk<br>
+              Pack size: 6
+            </p>
+            <p class="cart_price">$ 27.45</p>
+          </div>
+
+          <hr id="cart_div">
+
+          <p class="cart_price">Total: $ 29.94</p>
+          <button id="cart_button">Checkout</button>
+        </div>
       </div>
     </main>
   </body>

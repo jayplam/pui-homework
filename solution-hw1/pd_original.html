@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="author" content="Jadon Lam">
     <title>Bun Bun Bake Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header>
-      <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      <a href="./index.html">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo" width="400">
+      </a>
       <hr>
       <nav>
         <ul>
@@ -18,27 +20,39 @@
       </nav>
     </header>
     <main>
-      <h1>Original cinnamon roll</h1>
-      <img src="../assets/products/original-cinnamon-roll.jpg" alt="product item">
-      <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+      <div class="contain_div">
+        <div>
+          <h1>Original cinnamon roll</h1>
 
-      <label for="glaze">Glazing:</label>
-      <select name="glaze" id="glaze_drop">
-        <option value="original">Keep original</option>
-        <option value="s_milk">Sugar milk</option>
-        <option value="v_milk">Vanilla milk</option>
-        <option value="choco">Double chocolate</option>
-      </select>
+          <img src="../assets/products/original-cinnamon-roll.jpg" alt="product item" width="600" class="img_border">
+          
+          <div id="pd_width">
+            <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
 
-      <label for="size">Pack size:</label>
-      <select name="size" id="glaze_drop">
-        <option value="1">1</option>
-        <option value="3">3</option>
-        <option value="6">6</option>
-        <option value="12">12</option>
-      </select>    
-      <p>$2.49</p>
-      <button>Add to Cart</button>  
+            <label for="glaze">Glazing:<br></label>
+
+            <select name="glaze" id="glaze_drop">
+              <option value="original">Keep original</option>
+              <option value="s_milk">Sugar milk</option>
+              <option value="v_milk">Vanilla milk</option>
+              <option value="choco">Double chocolate</option>
+            </select>
+
+            <br>
+
+            <label for="size">Pack size:</label>
+
+            <select name="size" id="size_drop">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+
+            <p>$ 2.49 <button>Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
