@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <!-- Header- image with link, nav with links, horizontal line -->
     <header>
       <a href="./index.html">
         <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo" width="400">
       </a>
       <hr>
-      <nav>
-        <ul>
-          <li><a href="./index.html">PRODUCTS</a></li>
-          <li><a href="./cart.html">CART</a></li>
-        </ul>        
-      </nav>
+      <div>
+        <nav>
+          <ul>
+            <li class="h_bold"><a href="./index.html">PRODUCTS</a></li>
+            <li><a href="./cart.html">CART</a></li>
+          </ul>        
+        </nav>
+      </div>
     </header>
+    <!-- Main -->
     <main>
-      <div class="contain_div">
+      <!-- container div to style and center the rest in section -->
+      <section>
         <div>
           <h1>Original cinnamon roll</h1>
 
           <img src="../assets/products/original-cinnamon-roll.jpg" alt="product item" width="600" class="img_border">
           
+          <!-- Container for dropdowns and submission -->
           <div id="pd_width">
             <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
 
-            <label for="glaze">Glazing:<br></label>
+            <label for="glaze_drop">Glazing:<br></label>
 
             <select name="glaze" id="glaze_drop">
               <option value="original">Keep original</option>
@@ -40,7 +46,11 @@
 
             <br>
 
-            <label for="size">Pack size:</label>
+            <!-- 
+              https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+              Used the link from the model to create the dropdowns
+             -->
+            <label for="size_drop">Pack size:<br></label>
 
             <select name="size" id="size_drop">
               <option value="1">1</option>
@@ -49,10 +59,10 @@
               <option value="12">12</option>
             </select>
 
-            <p>$ 2.49 <button>Add to Cart</button></p>
+            <p id="price_button">$ 2.49 <button>Add to Cart</button></p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>

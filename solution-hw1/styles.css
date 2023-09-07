@@ -1,50 +1,161 @@
-/* Main stuff */
+/* Base level */
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
 }
-.contain_div {
+/* 
+https://www.w3schools.com/tags/tag_hr.asp
+Didn't know about HR before I looked for it.
+*/
+hr {
+  height: 5px;
+  background-color: black;
+}
+#cart_hr {
+  width: 1000px;
+}
+
+/* 
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+Unsatisfied with how this one turned out, I may try to reformat into display block or something
+*/
+section {
   display: flex;
   justify-content: center;
 }
 
-/* Header stuff */
+/* Page Level */
 h1 {
   font-weight: normal;
+  font-size: 50px;
+  margin: 70px auto;
 }
 
-/* Format/style stuff */
 ul {
   padding: 0;
-  margin: 0;
 }
+
 li {
   list-style-type: none;
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
 }
-li a {
+
+div a {
   color: black;
   text-decoration: none;
+  margin: 0 auto;
+}
+
+/* index specific items */
+.list_div {
+  margin-bottom: 100px;
 }
 
 .list_div a {
   display: block;
   width: 400px;
-  padding: 20px;
+  padding: 15px 15px 0px 15px;
+}
+.list_div p {
+  margin-top: 12px;
+}
+.list_div span {
+  text-decoration: underline;
 }
 
+/* PD specific items */
+#pd_width {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+#pd_width p, #pd_width label, #pd_width select, #pd_width button {
+  font-size: 24px;
+}
 
-/*base image size classes*/
-.img_border {
-  border: solid 5px;
+#pd_width p {
+  margin-bottom: 80px;
+}
+
+#pd_width select {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto 30px auto;
+  border-width: 3px;
   border-color: black;
 }
 
+#price_button {
+  margin-top: 50px;
+  float: right;
+  font-weight: bold;
+}
 
-/* Hover stuff */
+#price_button button {
+  width: 170px;
+  margin-left: 20px;
+  padding: 5px;
+  border-width: 3px;
+  border-color: black;
+}
 
-figcaption , p , h1 {
+/* Cart specific items */
+figcaption , #cart_div , h1 {
   text-align: center;
 }
+figure {
+  text-align: center;
+}
+figcaption {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* https://www.geeksforgeeks.org/how-to-affect-other-elements-when-one-element-is-hovered-in-css/
+This one feels a little backwards to me but it works so I won't touch it */
+.cart_price {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.cart_price:last-child {
+  margin-bottom: 120px;
+}
 #cart_button {
-  margin: 0 auto;
+  font-size: 30px;
+  width: 250px;
+  height: 60px;
+  border-width: 3px;
+  border-color: black;
+}
+
+/*for image items*/
+.img_border {
+  border: solid 5px;
+  border-color: black;
+  margin-left: -5px;
+}
+
+/* Bold for page nav */
+.h_bold a{
+  background-color: yellow;
+  font-weight: bold;
+}
+/* Hover stuff */
+.list_div a:hover {
+  background-color: yellow;
+}
+.list_div a:hover span {
+  font-weight: bold;
+  font-size: 33px;
+}
+#price_button:hover button{
+  font-weight: bold;
+  background-color: yellow;
+}
+#cart_button:hover {
+  font-weight: bold;
+  background-color: yellow;
 }
