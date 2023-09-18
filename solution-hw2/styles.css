@@ -1,71 +1,99 @@
 /* Base level */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
+  font-size: 26px;
+  margin: 0;
+  min-width: 1050px;
 }
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 60px 30px;
+}
+header img {
+  margin-right: 30px;
+  width: 400px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  margin: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 60px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 /* 
 https://www.w3schools.com/tags/tag_hr.asp
 Didn't know about HR before I looked for it.
 */
-hr {
+header hr {
   height: 5px;
+  margin: 10px 0;
+  border: 0;
   background-color: black;
 }
-#cart_hr {
-  width: 1000px;
-}
 
-/* 
-https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-Unsatisfied with how this one turned out, I may try to reformat into display block or something
-*/
-section {
-  display: flex;
-  justify-content: center;
+h1 {
+  font-weight: normal;
+  font-size: 36px;
+  margin: 60px auto auto 0;
 }
 
 /* Page Level */
-h1 {
-  font-weight: normal;
-  font-size: 50px;
-  margin: 70px auto;
+/* Gallery Page */
+.list_container {
+  display: flex;
+  flex-direction: column;
 }
 
-ul {
-  padding: 0;
+.list_row {
+  display: flex;
+  justify-content: center; /* Arrange items in each row with space-between */
 }
 
-li {
-  list-style-type: none;
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-
-div a {
-  color: black;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-/* index specific items */
 .list_div {
-  margin-bottom: 100px;
+  margin: 20px 25px;
+  width: 301px;
 }
 
 .list_div a {
+  color: black;
+  text-decoration: none;
   display: block;
-  width: 400px;
-  padding: 15px 15px 0px 15px;
+  padding: 5px;
+}
+
+.list_div img {
+  width: 285px;
 }
 .list_div p {
-  margin-top: 12px;
+  margin: 10px auto 0 auto;
 }
 .list_div span {
   text-decoration: underline;
 }
+/* End of Gallery Page */
 
-/* PD specific items */
+/* Product Description Page */
 #pd_width {
   display: block;
   width: 300px;
@@ -100,8 +128,9 @@ div a {
   border-width: 3px;
   border-color: black;
 }
+/* End of Product Description Page*/
 
-/* Cart specific items */
+/* Cart Page */
 figcaption , #cart_div , h1 {
   text-align: center;
 }
@@ -130,12 +159,12 @@ This one feels a little backwards to me but it works so I won't touch it */
   border-width: 3px;
   border-color: black;
 }
+/* End of Cart Page */
 
-/*for image items*/
+/* Image Item things */
 .img_border {
-  border: solid 5px;
+  border: solid 3px;
   border-color: black;
-  margin-left: -5px;
 }
 
 /* Bold for page nav */
@@ -149,7 +178,6 @@ This one feels a little backwards to me but it works so I won't touch it */
 }
 .list_div a:hover span {
   font-weight: bold;
-  font-size: 33px;
 }
 #price_button:hover button{
   font-weight: bold;
@@ -159,3 +187,4 @@ This one feels a little backwards to me but it works so I won't touch it */
   font-weight: bold;
   background-color: yellow;
 }
+/* End of Hover stuff */
