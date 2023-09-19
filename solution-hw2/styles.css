@@ -3,7 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   margin: 0;
-  min-width: 1050px;
+  min-width: 1180px;
 }
 
 /*
@@ -14,6 +14,7 @@ header {
   justify-content: space-between;
   margin: 30px 0px 60px 30px;
 }
+
 header img {
   margin-right: 30px;
   width: 400px;
@@ -36,6 +37,7 @@ nav ul li {
   display: inline;
   margin-right: 60px;
 }
+
 nav ul li a {
   text-decoration: none;
   color: black;
@@ -85,25 +87,34 @@ h1 {
 .list_div img {
   width: 285px;
 }
+
 .list_div p {
   margin: 10px auto 0 auto;
 }
+
 .list_div span {
   text-decoration: underline;
 }
 /* End of Gallery Page */
 
 /* Product Description Page */
-#pd_width {
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-}
-#pd_width p, #pd_width label, #pd_width select, #pd_width button {
-  font-size: 24px;
+#pd_page img {
+  width: 600px;
+  margin-left: 150px;
 }
 
-#pd_width p {
+#pd_width {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-left: 60px;
+}
+
+#pd_width p, #pd_width label, #pd_width select, #pd_width button {
+  font-size: 26px;
+}
+
+#pd_width p:first-child {
   margin-bottom: 80px;
 }
 
@@ -123,7 +134,7 @@ h1 {
 
 #price_button button {
   width: 170px;
-  margin-left: 20px;
+  margin-left: 30px;
   padding: 5px;
   border-width: 3px;
   border-color: black;
@@ -131,36 +142,85 @@ h1 {
 /* End of Product Description Page*/
 
 /* Cart Page */
-figcaption , #cart_div , h1 {
-  text-align: center;
+/* Mostly done to align everything, specifically the other hr, with the header hr. */
+#cart_div {
+  margin-left: 460px;
 }
+
+.cart_item {
+  display:flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Quick and dirty way to get it to center how I wanted it to. */
+.cart_item p {
+  margin-top: 0;
+}
+
+/* This too */
+.cart_item .cart_price {
+  margin-top: -35px;
+}
+
 figure {
-  text-align: center;
+  margin: 0 30px 0 0;
 }
+
+figure img {
+  width: 120px;
+}
+
 figcaption {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: underline;
 }
 
-/* https://www.geeksforgeeks.org/how-to-affect-other-elements-when-one-element-is-hovered-in-css/
-This one feels a little backwards to me but it works so I won't touch it */
+/* 
+https://www.geeksforgeeks.org/how-to-affect-other-elements-when-one-element-is-hovered-in-css/
+This one feels a little backwards to me but it works so I won't touch it 
+*/
 .cart_price {
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: 30px;
+  margin: 0 60px 0 auto;
+  text-align: right;
 }
-.cart_price:last-child {
-  margin-bottom: 120px;
+
+/* Mostly copy-pasted from the header one for style. */
+#cart_hr {
+  height: 5px;
+  margin: 10px 0;
+  border: 0;
+  background-color: black;
 }
+
+.cart_total {
+  display: flex;
+  align-items: center;
+  margin: 40px 0 50px 0;
+}
+.cart_total_word {
+  font-size: 30px;
+  margin: 0 0 0 160px;
+}
+
+/* 
+https://www.w3schools.com/cssref/pr_class_float.php
+For some reason, I couldn't for the life of me remember this one existed.
+ */
 #cart_button {
   font-size: 30px;
   width: 250px;
   height: 60px;
   border-width: 3px;
   border-color: black;
+  float: right;
+  margin-right: 60px;
 }
-/* End of Cart Page */
 
+/* End of Cart Page */
+/* ///////////////////////////////////////////////////////////////////// */
 /* Image Item things */
 .img_border {
   border: solid 3px;
