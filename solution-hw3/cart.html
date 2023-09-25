@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jadon Lam">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <!-- Header- image with link, nav with links, horizontal line, header -->
+    <header>
+      <a href="./index.html">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      </a>
+
+      <div class="header-content">
+        <nav>
+          <ul>
+            <li><a href="./index.html">PRODUCTS</a></li>
+            <li class="h_bold"><a href="./cart.html">CART</a></li>
+          </ul>        
+        </nav>
+
+        <hr>
+
+        <h1>Shopping Cart</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- container div to style and center the rest in section -->
+      <section>
+        <div id="cart_div">
+          <!-- cart contents -->
+          <div class="cart_item">
+            <figure>
+              <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="img_border">
+              <figcaption>Remove</figcaption>
+            </figure>
+
+            <p>
+              Original Cinnamon Roll<br>
+              Glazing: Keep original<br>
+              Pack size: 1
+            </p>
+            
+            <p class="cart_price">$ 2.49</p>
+          </div>
+
+          <!-- second item -->
+          <div class="cart_item">
+            <figure>
+              <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double chocolate cinnamon roll" class="img_border">
+              <figcaption>Remove</figcaption>
+            </figure>
+
+            <p>
+            Double Chocolate Cinnamon Roll<br>
+            Glazing: Sugar milk<br>
+            Pack size: 6
+            </p>
+
+            <p class="cart_price">$ 27.45</p>
+          </div>
+
+          <hr id="cart_hr">
+
+          <!-- Cart total price - separated for styling - and submission -->
+          <div class="cart_total">
+            <p class="cart_total_word">Total: </p>
+            <p class="cart_price">$ 29.94</p>
+          </div>
+
+          <button id="cart_button">Checkout</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
