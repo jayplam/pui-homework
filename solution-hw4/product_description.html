@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jadon Lam">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./rollsData.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  
+  <body>
+    <!-- Header- image with link, nav with links, horizontal line, header -->
+    <header>
+      <a href="./index.html">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      </a>
+
+      <div class="header-content">
+        <nav>
+          <ul>
+            <li class="h_bold"><a href="./index.html">PRODUCTS</a></li>
+            <li><a href="./cart.html">CART</a></li>
+          </ul>        
+        </nav>
+
+        <hr>
+
+        <h1 id="pd_header">Original cinnamon roll</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- container div to style and center the rest in section -->
+      <section>
+        <div id="pd_page">
+          <img src="../assets/products/original-cinnamon-roll.jpg" alt="product item" id="pd_image" class="img_border">
+          
+          <!-- Container for dropdowns and submission -->
+          <div id="pd_width">
+            <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+
+            <label for="glaze_drop">Glazing:<br></label>
+
+            <select name="glaze" id="glaze_drop">
+              <!-- <option value="original">Keep original</option>
+              <option value="s_milk">Sugar milk</option>
+              <option value="v_milk">Vanilla milk</option>
+              <option value="choco">Double chocolate</option> -->
+            </select>
+
+            <br>
+
+            <!-- 
+              https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+              Used the link from the model to create the dropdowns
+             -->
+            <label for="pack_drop">Pack size:<br></label>
+
+            <select name="pack" id="pack_drop">
+              <!-- <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option> -->
+            </select>
+
+            <div id="pd_price_inline">
+              <p id="pd_price">$ 2.49</p>
+              <button id="pd_button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
