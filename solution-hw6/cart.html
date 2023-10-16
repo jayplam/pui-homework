@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jadon Lam">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./rollsData.js"></script>
+    <script defer src="./cartScript.js"></script>
+  </head>
+
+  <body>
+    <!-- Header- image with link, nav with links, horizontal line, header -->
+    <header>
+      <a href="./gallery.html">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      </a>
+
+      <div class="header-content">
+        <nav>
+          <ul>
+            <li><a href="./gallery.html">PRODUCTS</a></li>
+            <li class="h_bold"><a href="./cart.html">CART</a></li>
+          </ul>        
+        </nav>
+
+        <hr>
+
+        <h1>Shopping Cart</h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- container div to style and center the rest in section -->
+      <section>
+        <div id="cart_div">
+          <!-- cart contents -->
+          <template id="cart_item_template">
+            <div class="cart_item">
+              <figure>
+                <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="img_border">
+                <figcaption class="item_remove">Remove</figcaption>
+              </figure>
+  
+              <p>
+                <span class="item_name">Original Cinnamon Roll</span><br>
+                Glazing: <span class="item_glazing">Keep original</span><br>
+                Pack size: <span class="item_pack_size">1</span>
+              </p>
+              
+              <p class="cart_price">$ <span class="item_price">2.49</span></p>
+            </div>
+          </template>
+
+        <!--           
+          <div class="cart_item">
+            <figure>
+              <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class="img_border">
+              <figcaption class="item_remove">Remove</figcaption>
+            </figure>
+
+            <p>
+              Original Cinnamon Roll<br>
+              Glazing: Keep original<br>
+              Pack size: 1
+            </p>
+            
+            <p class="cart_price">$ 2.49</p>
+          </div>
+          <div class="cart_item">
+            <figure>
+              <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double chocolate cinnamon roll" class="img_border">
+              <figcaption class="item_remove">Remove</figcaption>
+            </figure>
+
+            <p>
+              Double Chocolate Cinnamon Roll<br>
+              Glazing: Sugar milk<br>
+              Pack size: 6
+            </p>
+
+            <p class="cart_price">$ 27.45</p>
+          </div> 
+        -->
+
+          <hr id="cart_hr">
+
+          <!-- Cart total price - separated for styling - and submission -->
+          <div class="cart_total">
+            <p class="cart_total_word">Total: </p>
+            <p class="cart_price cart_total_price">$ 29.94</p>
+          </div>
+
+          <button id="cart_button">Checkout</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

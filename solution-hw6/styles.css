@@ -1,0 +1,257 @@
+/* Base level */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  margin: 0;
+  min-width: 1180px;
+}
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 60px 30px;
+}
+
+header img {
+  margin-right: 30px;
+  width: 400px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  margin: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+https://www.w3schools.com/tags/tag_hr.asp
+Didn't know about HR before I looked for it.
+*/
+header hr {
+  height: 5px;
+  margin: 10px 0;
+  border: 0;
+  background-color: black;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 36px;
+  margin: 60px auto auto 0;
+}
+
+/* Page Level */
+/* Gallery Page */
+.list_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_row {
+  display: flex;
+  justify-content: center; /* Arrange items in each row with space-between */
+}
+
+.list_div {
+  margin: 20px 25px;
+  width: 301px;
+}
+
+.list_div a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+
+.list_div img {
+  width: 285px;
+}
+
+.list_div p {
+  margin: 10px auto 0 auto;
+}
+
+.list_div span {
+  text-decoration: underline;
+}
+/* End of Gallery Page */
+
+/* Product Description Page */
+#pd_page img {
+  width: 600px;
+  margin-left: 150px;
+}
+
+#pd_width {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-left: 60px;
+}
+
+#pd_width p, #pd_width label, #pd_width select, #pd_width button {
+  font-size: 22px;
+}
+
+#pd_width p:first-child {
+  margin-bottom: 80px;
+}
+
+
+#pd_width select {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto 30px auto;
+  border-width: 3px;
+  border-color: black;
+}
+
+#pd_price_inline {
+  margin-top: 50px;
+  float: right;
+}
+
+#pd_price {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#pd_button {
+  width: 170px;
+  height: 45px;
+  margin-top: 10px;
+  border-width: 3px;
+  border-color: black;
+}
+
+/* End of Product Description Page*/
+
+/* Cart Page */
+/* Mostly done to align everything, specifically the other hr, with the header hr. */
+#cart_div {
+  margin-left: 460px;
+}
+
+.cart_item {
+  display:flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Quick and dirty way to get it to center how I wanted it to. */
+.cart_item p {
+  margin-top: 0;
+}
+
+/* This too */
+.cart_item .cart_price {
+  margin-top: -35px;
+}
+
+figure {
+  margin: 0 30px 0 0;
+}
+
+figure img {
+  width: 120px;
+}
+
+figcaption {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* 
+https://www.geeksforgeeks.org/how-to-affect-other-elements-when-one-element-is-hovered-in-css/
+This one feels a little backwards to me but it works so I won't touch it 
+*/
+.cart_price {
+  font-size: 30px;
+  margin: 0 60px 0 auto;
+  text-align: right;
+}
+
+/* Mostly copy-pasted from the header one for style. */
+#cart_hr {
+  height: 5px;
+  margin: 10px 0;
+  border: 0;
+  background-color: black;
+}
+
+.cart_total {
+  display: flex;
+  align-items: center;
+  margin: 40px 0 50px 0;
+}
+.cart_total_word {
+  font-size: 30px;
+  margin: 0 0 0 160px;
+}
+
+/* 
+https://www.w3schools.com/cssref/pr_class_float.php
+For some reason, I couldn't for the life of me remember this one existed.
+ */
+#cart_button {
+  font-size: 30px;
+  width: 250px;
+  height: 60px;
+  border-width: 3px;
+  border-color: black;
+  float: right;
+  margin-right: 60px;
+}
+
+/* End of Cart Page */
+/* ///////////////////////////////////////////////////////////////////// */
+/* Image Item things */
+.img_border {
+  border: solid 3px;
+  border-color: black;
+}
+
+/* Bold for page nav */
+.h_bold a{
+  background-color: yellow;
+  font-weight: bold;
+}
+/* Hover stuff */
+.list_div a:hover {
+  background-color: yellow;
+}
+.list_div a:hover span {
+  font-weight: bold;
+}
+#pd_button:hover {
+  font-weight: bold;
+  background-color: yellow;
+}
+#cart_button:hover {
+  font-weight: bold;
+  background-color: yellow;
+}
+/* End of Hover stuff */
